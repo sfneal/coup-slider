@@ -4,5 +4,6 @@
   "description": "Coup slider jQuery plugin",
   "repository": "https://github.com/sfneal/coup-slider.git",
   "author": "sfneal <stephen.neal14@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "files": ["src"]
 }
