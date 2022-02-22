@@ -1,0 +1,12 @@
+{
+  "name": "coup-slider",
+  "version": "5.4.8",
+  "description": "Coup slider jQuery plugin",
+  "repository": "https://github.com/sfneal/coup-slider.git",
+  "author": "sfneal <stephen.neal14@gmail.com>",
+  "license": "MIT",
+  "files": ["src"],
+  "dependencies": {
+    "jquery": "^3.2"
+  }
+}
