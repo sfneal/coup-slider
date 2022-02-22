@@ -6,10 +6,20 @@ cache:
 
 node_js:
   - node
-  - 'lts/*'
 
 install:
   - yarn install
 
 script:
   - yarn pack
+
+deploy:
+  provider: npm
+  email: stephen.neal14@gmail.com
+  api_key:
+    secure: bIZkV9vfvJPDPAo8Wd7zWWB+nw0Tt2lzfCTbHqnb6y0cPjozJ/vq0fslsVhix1XcCLfGCd8UcBiejROXifa70FnGam0kO4PqsDBL/Qqvqw6jZ8K+pkz87yLgXwe6yFJFxf+p0sP4PC060WiVPbAEnk09Qc7Oyg8FuglQryUdfF2eugYCsaOozzc/OfH2z3DxtbtmYbaArO4IEfrfXeAfgtclecpyfyx9DYkpWsjSVEgkey/V4jW1sTseHKydT4teauaJ01pFThfNsG+QsEhfcM7s8LRfPuR8gFGBgOJjR+1aJJnBhSRWwVzDT6H/LNBhGgn8WzE2BcPpDE5YfAZEV6Z4Ntt0N05dgewmFjOBYFXw3BqDjzar+JMJMnajllojF8g//JyF4tMs/plIeKhpqH4uR/i5jdiPBF3UczzlGNbcyCw2LidfIYWij8/musaLcXOkNV97wO7kTvn9pBAR5APZ9lpaqjNquYgp+Ww+2FVgQIVpupD++5KvHDUNcD0JH5JN9xwLeg9zPeRNTvr3PlH0zV1RXQesVLx+1S6W7WbTn9UVxz53tFh7V4b12fvo4GMQf8140cjlk2t2QD4daXa07RC58dYXpsvOv7kGtmbEsqn39HtHMx0OpCuaMtkiIEKG2BYvGvR2C34ZJjECx1Gx3EIsa/Li51v8GxbvcYg=
+  skip_existing: true
+  on:
+    tags: true
+    repo: sfneal/coup-slider
+  skip_cleanup: 'true'
